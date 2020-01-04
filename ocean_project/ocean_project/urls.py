@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from display_droplets.views import GetDroplets
+from droplets.views import GetDroplets
 
 urlpatterns = [
     path('admin/', admin.site.urls),
