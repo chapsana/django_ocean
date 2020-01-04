@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import sys
+import dotenv
 
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ocean_project.settings")
@@ -20,3 +21,6 @@ if __name__ == "__main__":
             )
         raise
     execute_from_command_line(sys.argv)
+dotenv.load_dotenv(
+    os.path.join(os.path.dirname(__file__), '.env')
+)
