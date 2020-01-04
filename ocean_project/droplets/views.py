@@ -1,3 +1,6 @@
-from django.shortcuts import render
+from django.views.generic import TemplateView
 
-# Create your views here.
+class GetDroplets(TemplateView):
+    template_name = 'droplets.html'
+    def get_context_data(self, *args, **kwargs):
+        pass
